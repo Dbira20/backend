@@ -1,0 +1,4 @@
+{
+  "database" : "mongodb+srv://peddler:peddler-cred@cluster0.ialfx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "token_secret" : "encryption-peddler"
+}
