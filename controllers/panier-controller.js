@@ -1,4 +1,4 @@
-const Panier = require("../Models/panier");
+const Panier = require("../models/panier");
 
 exports.getMy = async (req, res) => {
   res.send({ panier: await Panier.findOne({ "user": req.body.user }).populate("produits user") });
