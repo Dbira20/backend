@@ -186,6 +186,7 @@ exports.forgotPassword = async (req, res) => {
         expiresIn: "3600000", // in Milliseconds (3600000 = 1 hour)
       }
     );
+    
 
     envoyerEmailReinitialisation(req.body.email, codeDeReinit);
 
