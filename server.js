@@ -21,7 +21,7 @@ app.use("/api/panier", require("./routes/panier-route"))
 app.use("/api/user", require("./routes/user-route"))
 
 mongoose.Promise = global.Promise
-mongoose.connect(config.database, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://peddler:peddler-cred@cluster0.ialfx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
   .then(
     () => {
       console.log("Connecté a la base de données")
